@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="c482.Controller.ModifyPart">
+    <children>
+        <Label fx:id="lblAddPartsScreen" layoutX="14.0" layoutY="14.0" text="Modify Part" textFill="#003cff">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <RadioButton fx:id="radioAddPartsInHouse" layoutX="136.0" layoutY="19.0" mnemonicParsing="false" selected="true" text="In House" />
+        <RadioButton fx:id="radioAddPartsOutsource" layoutX="239.0" layoutY="18.0" mnemonicParsing="false" text="Outsourced" />
+        <Label fx:id="lblAddPartsID" layoutX="35.0" layoutY="67.0" text="ID">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblAddPartsIDNumber" alignment="CENTER" layoutX="142.0" layoutY="57.0" prefHeight="40.0" prefWidth="150.0" style="-fx-border-width: 1; -fx-border-color: black; -fx-border-style: solid; -fx-padding: 5;" text="Auto Gen - Disabled">
+            <font>
+                <Font name="System Italic" size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblAddPartsName" layoutX="35.0" layoutY="122.0" text="Name">
+            <font>
+                <Font size="14.0" />
+            </font></Label>
+        <TextField fx:id="txtAddPartsName" layoutX="141.0" layoutY="113.0" prefHeight="40.0" prefWidth="150.0" promptText="Part Name">
+            <font>
+                <Font name="System Italic" size="14.0" />
+            </font></TextField>
+        <Label fx:id="lblAddPartsInv" layoutX="35.0" layoutY="177.0" text="Quantity">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtAddPartsInv" layoutX="138.0" layoutY="166.0" prefHeight="40.0" prefWidth="150.0" promptText="Quantity">
+            <font>
+                <Font name="System Italic" size="14.0" />
+            </font>
+        </TextField>
+        <Label fx:id="lblAddPartsPrice" layoutX="35.0" layoutY="232.0" text="Price/Cost">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtAddPartsPrice" layoutX="141.0" layoutY="221.0" prefHeight="40.0" prefWidth="150.0" promptText="Price/Cost">
+            <font>
+                <Font name="System Italic" size="14.0" />
+            </font></TextField>
+        <Label fx:id="lblAddPartsMax" layoutX="35.0" layoutY="287.0" text="Max">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtAddPartsMax" layoutX="140.0" layoutY="277.0" prefHeight="40.0" prefWidth="100.0" promptText="Max">
+            <font>
+                <Font name="System Italic" size="14.0" />
+            </font>
+        </TextField>
+        <Label fx:id="lblAddPartsMin" layoutX="255.0" layoutY="287.0" text="Min">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtAddPartsMin" layoutX="297.0" layoutY="277.0" prefHeight="40.0" prefWidth="100.0" promptText="Min">
+            <font>
+                <Font name="System Italic" size="14.0" />
+            </font></TextField>
+        <Label fx:id="lblAddPartsDyn" layoutX="35.0" layoutY="339.0" text="Machine ID">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtAddPartsDyn" layoutX="140.0" layoutY="332.0" prefHeight="40.0" prefWidth="150.0" promptText="Machine ID">
+            <font>
+                <Font name="System Italic" size="14.0" />
+            </font>
+        </TextField>
+        <Button fx:id="btrnAddPartsSave" layoutX="255.0" layoutY="403.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="60.0" text="Save" />
+        <Button fx:id="btnAddPartsCancel" onAction="#btnGoBack" layoutX="337.0" layoutY="402.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="60.0" text="Cancel" />
+    </children>
+</AnchorPane>
